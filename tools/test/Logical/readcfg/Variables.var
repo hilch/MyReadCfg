@@ -1,0 +1,6 @@
+VAR
+	cfgDevice : STRING[32] := 'USER'; (*FileIO device pointing to the USER partition*)
+	gMachineCfg : MachineConfiguration_typ;
+	cfgFileName : STRING[80] := 'settings.ini';
+	cfgIdent : UDINT;
+END_VAR

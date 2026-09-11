@@ -1,0 +1,25 @@
+VAR CONSTANT
+	MRC_MAX_HANDLES : UDINT := 8; (*number of configurations that can be open at the same time*)
+	MRC_MAX_FILE_SIZE : UDINT := 1048576; (*1 MiB*)
+	MRC_MAX_KEY_LENGTH : UDINT := 64;
+	MRC_MAX_VALUE_LENGTH : UDINT := 255;
+	MRC_READ_CHUNK : UDINT := 8192; (*block size for FileRead*)
+	MRC_FILEIO_MAX_CALLS : UDINT := 100000; (*loop guard for asynchronous function blocks*)
+	MRC_LOGGER_SIZE : UDINT := 65536; (*size of the logger in bytes, fixed at creation*)
+
+	MRC_EVENT_INFO : DINT := 1610612736;
+	MRC_EVENT_WARN : DINT := -1610612736;
+	MRC_EVENT_ERR : DINT := -536870912;
+
+	MRC_ERR_OK : DINT := 0;
+	MRC_ERR_PARAM : DINT := -1064370176; (*invalid parameter*)
+	MRC_ERR_INVALID_IDENT : DINT := -1064370175; (*unknown or closed Ident*)
+	MRC_ERR_NO_HANDLE : DINT := -1064370174; (*handle table full*)
+	MRC_ERR_FILE : DINT := -1064370173; (*FileIO error*)
+	MRC_ERR_FILE_TOO_BIG : DINT := -1064370172;
+	MRC_ERR_MEMORY : DINT := -1064370171;
+	MRC_ERR_KEY_NOT_FOUND : DINT := -1064370170;
+	MRC_ERR_CONVERSION : DINT := -1064370169;
+	MRC_ERR_TRUNCATED : DINT := -1064370168;
+	MRC_ERR_TIMEOUT : DINT := -1064370167; (*asynchronous function block did not finish*)
+END_VAR

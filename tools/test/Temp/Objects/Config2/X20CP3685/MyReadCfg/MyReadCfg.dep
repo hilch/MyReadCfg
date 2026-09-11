@@ -1,0 +1,6 @@
+C:/Projects/github/MyReadCfg/MyReadCfg/sources/MyReadCfg/MyReadCfg.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/ArEventLog/ArEventLog.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/ArEventLog/ArEventLog.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/runtime/runtime.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/FileIO/FileIO.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/sys_lib/sys_lib.fun

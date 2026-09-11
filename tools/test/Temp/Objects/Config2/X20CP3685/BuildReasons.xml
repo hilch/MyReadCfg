@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BuildReasons>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_handle.cpp.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_close.cpp.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_log.cpp.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\ashwac.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_read.cpp.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_parse.cpp.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\udbdef.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\brsystem.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_open.cpp.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\tcdata\tcdata.imx">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\standard.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\sys_lib.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\arconfig.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\operator.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\asieccon.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\astime.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\runtime.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\fileio.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg\main.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\areventlog.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\asbrstr.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg\_bur_pvdef.st.o">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg\readcfg.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\a.out">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\myreadcfg.ox">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\tcdata\tcdata.s18d">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\role.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\user.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\fwrules.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\iomap.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\sysconf.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\tcdata.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\asfw.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\ashwd.br">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\config2\x20cp3685\transfer.lst">
+    <BuildReason>Rebuild.</BuildReason>
+  </Rule>
+</BuildReasons>

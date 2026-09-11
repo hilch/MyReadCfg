@@ -1,0 +1,16 @@
+void MRC_Open(void) {};
+void _MRC_Open(void) {};
+void MRC_Close(void) {};
+void _MRC_Close(void) {};
+void MRC_GetLastError(void) {};
+void _MRC_GetLastError(void) {};
+void MRC_KeyExists(void) {};
+void _MRC_KeyExists(void) {};
+void MRC_ReadBOOL(void) {};
+void _MRC_ReadBOOL(void) {};
+void MRC_ReadDINT(void) {};
+void _MRC_ReadDINT(void) {};
+void MRC_ReadLREAL(void) {};
+void _MRC_ReadLREAL(void) {};
+void MRC_ReadSTRING(void) {};
+void _MRC_ReadSTRING(void) {};

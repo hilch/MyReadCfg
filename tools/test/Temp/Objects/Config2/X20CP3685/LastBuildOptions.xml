@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9" WorkingVersion="4.12"?>
+<RuleSetOptions UsesUTCTime="True">
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\ashwac.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\hardware.hw" LastWriteTime="2026-09-11 12:18:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config2\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\ashwac.br&quot; -L &quot;ArEventLog: V*, AsBrStr: V*, AsIecCon: V*, astime: V*, brsystem: V*, FileIO: V*, MyReadCfg: V1.00.0, operator: V*, runtime: V*, standard: V*, sys_lib: V*&quot; -c &quot;Config2&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, FMUExport: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -M IA32 -B J4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config2&quot; -T SG4 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\sysconf.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\hardware.hw" LastWriteTime="2026-09-11 12:18:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config2\Hardware.hw&quot;  -c &quot;Config2&quot; -sysconf -S &quot;X20CP3685&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, FMUExport: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\sysconf.br&quot; -T SG4 -B J4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config2&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\asfw.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\hardware.hw" LastWriteTime="2026-09-11 12:18:16" />
+    <Prerequisite ID="c:\program files\brautomation4\as412\upgrades\modified.txt" LastWriteTime="2026-09-07 10:41:24" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config2\Hardware.hw&quot;  -v V1.00.0 -S &quot;X20CP3685&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\asfw.br&quot; -T SG4 -B J4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config2&quot; -zip -s &quot;Config2&quot; -firmware -Z &quot;UnitSystem: n.d, Connectivity: n.d, FMUExport: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\ashwd.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\hardware.hw" LastWriteTime="2026-09-11 12:18:16" />
+    <Prerequisite ID="c:\program files\brautomation4\as412\upgrades\modified.txt" LastWriteTime="2026-09-07 10:41:24" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config2\Hardware.hw&quot;  -v V1.00.0 -S &quot;X20CP3685&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\ashwd.br&quot; -T SG4 -B J4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config2&quot; -zip -s &quot;Config2&quot; -hwd -Z &quot;UnitSystem: n.d, Connectivity: n.d, FMUExport: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\arconfig.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\hardware.hw" LastWriteTime="2026-09-11 12:18:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\x20cp3685\iomap.iom" LastWriteTime="2026-09-11 12:18:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config2\Hardware.hw&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config2\X20CP3685\IoMap.iom&quot;  -arconfig -C &quot;/RT=1000 /AM=*&quot; -D &quot;/IF=COM1 /BD=57600 /PA=2 /IT=20 /RS=0&quot; -c &quot;Config2&quot; -v V1.00.0 -S &quot;X20CP3685&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, FMUExport: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B J4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config2&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\udbdef.br">
+    <Prerequisite ID="c:\program files\brautomation4\as412\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2026-05-28 07:51:08" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS412\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br, $(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\udbdef.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\iomap.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\x20cp3685\iomap.iom" LastWriteTime="2026-09-11 12:18:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\x20cp3685\pvmap.vvm" LastWriteTime="2026-09-11 12:18:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\hardware.hw" LastWriteTime="2026-09-11 12:18:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\x20cp3685\cpu.sw" LastWriteTime="2026-09-11 12:18:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\channelconfiguration.xml" LastWriteTime="2026-09-11 12:31:50" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config2\X20CP3685\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config2\X20CP3685\PvMap.vvm&quot;  -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\iomap.br&quot; -T SG4 -B J4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config2.X20CP3685&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\tcdata\tcdata.imx">
+    <Prerequisite ID="c:\program files\brautomation4\as412\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2026-05-28 07:49:26" />
+    <CommandLine Parameter=" -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\TCData\TCData.imx&quot; -c &quot;C:\Program Files\BRAutomation4\AS412\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;C:\Program Files\BRAutomation4\AS\System\J0493&quot; &quot;C:\Program Files\BRAutomation4\AS412\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\tcdata\tcdata.s18d">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\tcdata\tcdata.imx" LastWriteTime="2026-09-11 12:31:48" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\TCData\TCData.imx&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\TCData\TCData.s18d&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\tcdata.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\tcdata\tcdata.s18d" LastWriteTime="2026-09-11 12:31:50" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\TCData\TCData.s18d&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\TCData.br&quot; -t TextModule" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\role.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\x20cp3685\accessandsecurity\userrolesystem\role.role" LastWriteTime="2026-09-11 12:18:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config2\X20CP3685\AccessAndSecurity\UserRoleSystem\Role.role&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\Role.br&quot; -zip -B J4.93 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config2&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\user.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\x20cp3685\accessandsecurity\userrolesystem\user.user" LastWriteTime="2026-09-11 12:18:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config2\X20CP3685\AccessAndSecurity\UserRoleSystem\User.user&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\User.br&quot; -zip -B J4.93 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config2&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\fwrules.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\x20cp3685\accessandsecurity\firewall\rules.firewallrules" LastWriteTime="2026-09-11 12:18:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config2\X20CP3685\AccessAndSecurity\Firewall\Rules.firewallRules&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\FWRules.br&quot; -zip -B J4.93 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config2&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg\readcfg.ox" LastWriteTime="2026-09-11 12:31:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\x20cp3685\cpu.per" LastWriteTime="2026-09-11 12:18:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\readcfg\readcfg.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\readcfg.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\Config2\X20CP3685\LT.ofs&quot; -T SG4 -M IA32 -B J4.93 -G V6.3.0  -extConstants -d &quot;runtime: V* - V*,asieccon: V* - V*&quot; -r Cyclic1 -p 2 -s &quot;readcfg&quot; -L &quot;ArEventLog: V*, AsBrStr: V*, AsIecCon: V*, astime: V*, brsystem: V*, FileIO: V*, MyReadCfg: V1.00.0, operator: V*, runtime: V*, standard: V*, sys_lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="4096" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg\readcfg.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg\a.out" LastWriteTime="2026-09-11 12:31:46" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\readcfg\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\readcfg\readcfg.ox&quot; -T SG4 -r Cyclic1 -G V6.3.0  -B J4.93 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg\main.st.o" LastWriteTime="2026-09-11 12:31:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg\_bur_pvdef.st.o" LastWriteTime="2026-09-11 12:31:46" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\readcfg\Main.st.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\readcfg\_bur_pvdef.st.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\readcfg\a.out&quot; -G V6.3.0  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\Config2\X20CP3685\libMyReadCfg.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libbrsystem.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libsys_lib.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libFileIO.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libArEventLog.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libastime.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libstandard.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libAsBrStr.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libruntime.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\liboperator.a&quot; -specs &quot;C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V6.3.0\4.9\i686-elf\specs\I386specs_brelf&quot; -nostdlib" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg\main.st.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\readcfg\main.st" LastWriteTime="2026-09-11 12:14:14" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\readcfg\Main.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\readcfg\Main.st.o&quot; -T SG4 -M IA32 -B J4.93 -G V6.3.0  -s &quot;readcfg&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\readcfg\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\readcfg\Variables.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg\MyReadCfg.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg\MyReadCfgConstants.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg\_bur_pvdef.st.o">
+    <Prerequisite ID="c:\program files\brautomation4\as412\as\gnuinst\v6.3.0\4.9\i686-elf\include\bur\_bur_pvdef.st" LastWriteTime="2026-05-28 07:49:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg\main.st.o" LastWriteTime="2026-09-11 12:31:46" />
+    <CommandLine Parameter="&quot;C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V6.3.0\4.9\i686-elf\include\bur\_bur_pvdef.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\readcfg\_bur_pvdef.st.o&quot; -S &quot;Main.st&quot;  -T SG4 -M IA32 -B J4.93 -G V6.3.0  -s &quot;readcfg&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\readcfg\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\readcfg\Variables.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg\MyReadCfg.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg\MyReadCfgConstants.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\brsystem\brsystem.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\operator.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\j0493\sg4\ia32\operator.br" LastWriteTime="2024-04-11 14:49:12" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\operator.br, $(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\operator.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\runtime.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\j0493\sg4\ia32\runtime.br" LastWriteTime="2024-04-11 14:49:12" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\runtime.br, $(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\runtime.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\astime.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\j0493\sg4\ia32\astime.br" LastWriteTime="2024-04-11 14:49:12" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\astime.br, $(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\astime.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\asieccon.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\j0493\sg4\ia32\asieccon.br" LastWriteTime="2024-04-11 14:49:10" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\AsIecCon.br, $(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\AsIecCon.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\areventlog.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\j0493\sg4\ia32\areventlog.br" LastWriteTime="2024-04-11 14:49:10" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\ArEventLog.br, $(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\ArEventLog.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\fileio.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\j0493\sg4\ia32\fileio.br" LastWriteTime="2024-04-11 14:49:10" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\FileIO.br, $(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\FileIO.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\myreadcfg.ox" LastWriteTime="2026-09-11 12:31:48" />
+    <Prerequisite ID="c:\projects\github\myreadcfg\myreadcfg\sources\myreadcfg\ansic.lby" LastWriteTime="2026-09-11 08:07:50" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MyReadCfg.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\Config2\X20CP3685\LT.ofs&quot; -T SG4 -M IA32 -B J4.93 -G V6.3.0  -extConstants -d &quot;FileIO: V* - V*,ArEventLog: V* - V*,AsBrStr: V* - V*,sys_lib: V* - V*,standard: V* - V*,brsystem: V* - V*,runtime: V* - V*&quot; -r Library -s &quot;Libraries.MyReadCfg&quot; -L &quot;ArEventLog: V*, AsBrStr: V*, AsIecCon: V*, astime: V*, brsystem: V*, FileIO: V*, MyReadCfg: V1.00.0, operator: V*, runtime: V*, standard: V*, sys_lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\myreadcfg.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\a.out" LastWriteTime="2026-09-11 12:31:48" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MyReadCfg.ox&quot; -T SG4 -r Library -G V6.3.0  -B J4.93 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_handle.cpp.o" LastWriteTime="2026-09-11 12:31:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_parse.cpp.o" LastWriteTime="2026-09-11 12:31:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_log.cpp.o" LastWriteTime="2026-09-11 12:31:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_open.cpp.o" LastWriteTime="2026-09-11 12:31:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_close.cpp.o" LastWriteTime="2026-09-11 12:31:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_read.cpp.o" LastWriteTime="2026-09-11 12:31:46" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MRC_Handle.cpp.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MRC_Parse.cpp.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MRC_Log.cpp.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MRC_Open.cpp.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MRC_Close.cpp.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MRC_Read.cpp.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\a.out&quot; &quot;-Wl,--version-script=$(AS_PROJECT_PATH)\Temp\Archives\Config2\X20CP3685\libMyReadCfg.expmap&quot; -G V6.3.0  -T SG4 -M IA32 &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libbrsystem.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libsys_lib.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libFileIO.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libArEventLog.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libastime.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libstandard.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libAsBrStr.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\libruntime.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\liboperator.a&quot; -specs &quot;C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V6.3.0\4.9\i686-elf\specs\I386specs_brelf&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V6.3.0\4.9\i686-elf\lib\libstdc++.a,C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V6.3.0\4.9\i686-elf\lib\libsupc++.a,C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V6.3.0\4.9\i686-elf\lib\libbur_cpp.a,C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V6.3.0\4.9\i686-elf\lib\libbur_cpp_rtk.a&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_handle.cpp.o">
+    <Prerequisite ID="c:\projects\github\myreadcfg\myreadcfg\sources\myreadcfg\mrc_handle.cpp" LastWriteTime="2026-09-11 12:30:26" />
+    <CommandLine Parameter="&quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg\MRC_Handle.cpp&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MRC_Handle.cpp.o&quot; -T SG4 -M IA32 -B J4.93 -G V6.3.0  -s &quot;Libraries.MyReadCfg&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V6.3.0\4.9\i686-elf\specs\I386specs_brelf&quot; -r Library -I &quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\MyReadCfg&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\Libraries.h&quot; -D _MYREADCFG_EXPORT -x c++ -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_parse.cpp.o">
+    <Prerequisite ID="c:\projects\github\myreadcfg\myreadcfg\sources\myreadcfg\mrc_parse.cpp" LastWriteTime="2026-09-11 12:30:56" />
+    <CommandLine Parameter="&quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg\MRC_Parse.cpp&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MRC_Parse.cpp.o&quot; -T SG4 -M IA32 -B J4.93 -G V6.3.0  -s &quot;Libraries.MyReadCfg&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V6.3.0\4.9\i686-elf\specs\I386specs_brelf&quot; -r Library -I &quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\MyReadCfg&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\Libraries.h&quot; -D _MYREADCFG_EXPORT -x c++ -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_log.cpp.o">
+    <Prerequisite ID="c:\projects\github\myreadcfg\myreadcfg\sources\myreadcfg\mrc_log.cpp" LastWriteTime="2026-09-11 12:31:04" />
+    <CommandLine Parameter="&quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg\MRC_Log.cpp&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MRC_Log.cpp.o&quot; -T SG4 -M IA32 -B J4.93 -G V6.3.0  -s &quot;Libraries.MyReadCfg&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V6.3.0\4.9\i686-elf\specs\I386specs_brelf&quot; -r Library -I &quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\MyReadCfg&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\Libraries.h&quot; -D _MYREADCFG_EXPORT -x c++ -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_open.cpp.o">
+    <Prerequisite ID="c:\projects\github\myreadcfg\myreadcfg\sources\myreadcfg\mrc_open.cpp" LastWriteTime="2026-09-11 12:31:10" />
+    <CommandLine Parameter="&quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg\MRC_Open.cpp&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MRC_Open.cpp.o&quot; -T SG4 -M IA32 -B J4.93 -G V6.3.0  -s &quot;Libraries.MyReadCfg&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V6.3.0\4.9\i686-elf\specs\I386specs_brelf&quot; -r Library -I &quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\MyReadCfg&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\Libraries.h&quot; -D _MYREADCFG_EXPORT -x c++ -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_close.cpp.o">
+    <Prerequisite ID="c:\projects\github\myreadcfg\myreadcfg\sources\myreadcfg\mrc_close.cpp" LastWriteTime="2026-09-11 12:31:16" />
+    <CommandLine Parameter="&quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg\MRC_Close.cpp&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MRC_Close.cpp.o&quot; -T SG4 -M IA32 -B J4.93 -G V6.3.0  -s &quot;Libraries.MyReadCfg&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V6.3.0\4.9\i686-elf\specs\I386specs_brelf&quot; -r Library -I &quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\MyReadCfg&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\Libraries.h&quot; -D _MYREADCFG_EXPORT -x c++ -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg\mrc_read.cpp.o">
+    <Prerequisite ID="c:\projects\github\myreadcfg\myreadcfg\sources\myreadcfg\mrc_read.cpp" LastWriteTime="2026-09-11 12:31:24" />
+    <CommandLine Parameter="&quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg\MRC_Read.cpp&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\MyReadCfg\MRC_Read.cpp.o&quot; -T SG4 -M IA32 -B J4.93 -G V6.3.0  -s &quot;Libraries.MyReadCfg&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs &quot;C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V6.3.0\4.9\i686-elf\specs\I386specs_brelf&quot; -r Library -I &quot;C:\Projects\github\MyReadCfg\MyReadCfg\sources\MyReadCfg&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\MyReadCfg&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\Libraries.h&quot; -D _MYREADCFG_EXPORT -x c++ -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\asbrstr.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\j0493\sg4\ia32\asbrstr.br" LastWriteTime="2024-04-11 14:49:10" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\AsBrStr.br, $(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\AsBrStr.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\sys_lib.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\j0493\sg4\ia32\sys_lib.br" LastWriteTime="2024-04-11 14:49:12" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\sys_lib.br, $(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\sys_lib.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\standard.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\j0493\sg4\ia32\standard.br" LastWriteTime="2024-04-11 14:49:12" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\standard.br, $(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\standard.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\brsystem.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\j0493\sg4\ia32\brsystem.br" LastWriteTime="2024-04-11 14:49:12" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\J0493\SG4\Ia32\brsystem.br, $(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\brsystem.br" />
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config2\X20CP3685\#cpu_tp.mak&quot; -k" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\config2\x20cp3685\transfer.lst">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\ashwac.br" LastWriteTime="2026-09-11 12:31:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\sysconf.br" LastWriteTime="2026-09-11 12:31:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\asfw.br" LastWriteTime="2026-09-11 12:31:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\ashwd.br" LastWriteTime="2026-09-11 12:31:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\arconfig.br" LastWriteTime="2026-09-11 12:31:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\udbdef.br" LastWriteTime="2026-05-28 07:51:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\iomap.br" LastWriteTime="2026-09-11 12:31:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\tcdata.br" LastWriteTime="2026-09-11 12:31:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\role.br" LastWriteTime="2026-09-11 12:31:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\user.br" LastWriteTime="2026-09-11 12:31:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\fwrules.br" LastWriteTime="2026-09-11 12:31:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\readcfg.br" LastWriteTime="2026-09-11 12:31:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\operator.br" LastWriteTime="2024-04-11 14:49:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\runtime.br" LastWriteTime="2024-04-11 14:49:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\astime.br" LastWriteTime="2024-04-11 14:49:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\asieccon.br" LastWriteTime="2024-04-11 14:49:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\areventlog.br" LastWriteTime="2024-04-11 14:49:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\fileio.br" LastWriteTime="2024-04-11 14:49:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\myreadcfg.br" LastWriteTime="2026-09-11 12:31:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\asbrstr.br" LastWriteTime="2024-04-11 14:49:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\sys_lib.br" LastWriteTime="2024-04-11 14:49:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\standard.br" LastWriteTime="2024-04-11 14:49:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config2\x20cp3685\brsystem.br" LastWriteTime="2024-04-11 14:49:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config2\x20cp3685\cpu.sw" LastWriteTime="2026-09-11 12:18:50" />
+    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\test.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;Config2&quot; -i &quot;C:\Program Files\BRAutomation4\AS412&quot; -S &quot;X20CP3685&quot; -all -A &quot;X20CPx68x&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\Config2\X20CP3685\Cpu.sw&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, FMUExport: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -C &quot;/RT=1000 /AM=*&quot; -D &quot;/IF=COM1 /BD=57600 /PA=2 /IT=20 /RS=0&quot; -M IA32 -T SG4" />
+  </Rule>
+</RuleSetOptions>

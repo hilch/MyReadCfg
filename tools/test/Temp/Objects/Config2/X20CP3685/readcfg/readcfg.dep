@@ -1,0 +1,4 @@
+C:/Projects/github/MyReadCfg/MyReadCfg/sources/MyReadCfg/MyReadCfg.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/sys_lib/sys_lib.fun
+$(AS_PROJECT_PATH)/Logical/readcfg/Variables.var
+$(AS_PROJECT_PATH)/Logical/readcfg/Types.typ
