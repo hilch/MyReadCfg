@@ -3,4 +3,5 @@ VAR
 	gMachineCfg : MachineConfiguration_typ;
 	cfgFileName : STRING[80] := 'settings.ini';
 	cfgIdent : UDINT;
+	content : STRING[4096];
 END_VAR

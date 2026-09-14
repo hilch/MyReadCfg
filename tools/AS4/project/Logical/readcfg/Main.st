@@ -21,6 +21,9 @@ PROGRAM _INIT
 	gMachineCfg.cpu_threshold := MRC_ReadLREAL(cfgIdent, ADR('cpu_threshold'), 0.0);
 	gMachineCfg.memory_limit_gb := MRC_ReadLREAL(cfgIdent, ADR('memory_limit_gb'), 0.0);	
 	
+	(* read complete file content *)
+	MRC_ReadContent( cfgIdent, ADR(content), SIZEOF(content) );	
+	
 	MRC_Close(cfgIdent);
 	cfgIdent := 0; 
 	

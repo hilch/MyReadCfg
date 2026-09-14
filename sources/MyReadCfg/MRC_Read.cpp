@@ -252,7 +252,67 @@ double MRC_ReadLREAL(unsigned long Ident, unsigned long pKey, double Default)
 	mrcLogReadLREAL(key, converted);
 	return converted;
 }
+/* Reads the complete file content into a STRING variable. Returns copied length or negative error */
+signed long MRC_ReadContent(unsigned long Ident, unsigned long pValue, unsigned long MaxSize)
+{
+        struct MRC_Slot* slot;
+        const char* value;
+        char* dest = (char*)pValue;
+        unsigned long length;
+        plcbit truncated = 0;
 
+        if (pValue == 0 || MaxSize == 0)
+        {
+                slot = mrcSlotGet(Ident);
+                if (slot != 0)
+                {
+                        mrcSetError(slot, MRC_ERR_PARAM);
+                }
+                else
+                {
+                        mrcSetGlobalError(MRC_ERR_PARAM);
+                }
+                return MRC_ERR_PARAM;
+        }
+
+        slot = mrcSlotGet(Ident);
+        if (slot == 0)
+        {
+                mrcSetGlobalError(MRC_ERR_INVALID_IDENT);
+                return MRC_ERR_INVALID_IDENT;
+        }
+
+        value = slot->buffer;
+        if (value == 0)
+        {
+                dest[0] = 0;
+                mrcSetError(slot, MRC_ERR_OK);
+                mrcLogRead("CONTENT", "STRING", "");
+                return 0;
+        }
+
+        length = (unsigned long)std::strlen(value);
+        if (length > MaxSize - 1)
+        {
+                length = MaxSize - 1;
+                truncated = 1;
+        }
+
+        std::memcpy(dest, value, length);
+        dest[length] = 0;
+
+        if (truncated)
+        {
+                mrcSetError(slot, MRC_ERR_TRUNCATED);
+        }
+        else
+        {
+                mrcSetError(slot, MRC_ERR_OK);
+        }
+
+        mrcLogRead("CONTENT", "STRING", dest);
+        return (signed long)length;
+}
 /* Reads a value as STRING. Returns copied length or negative error */
 signed long MRC_ReadSTRING(unsigned long Ident, unsigned long pKey, unsigned long pValue, unsigned long MaxSize, unsigned long pDefault)
 {

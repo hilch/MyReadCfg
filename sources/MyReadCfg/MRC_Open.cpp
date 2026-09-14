@@ -199,43 +199,50 @@ unsigned long MRC_Open(unsigned long pDeviceName, unsigned long pFileName)
 	{
 		unsigned long contentLength = slot->bufferSize - 1;
 		unsigned long maxEntries = mrcCountLines(slot->buffer, contentLength);
+                char* parseBuffer = 0;
 
-		slot->entriesSize = maxEntries * sizeof(struct MRC_Entry);
-		if (TMP_alloc(slot->entriesSize, (void**)&slot->entries) != 0 || slot->entries == 0)
-		{
-			slot->entries = 0;
-			slot->entriesSize = 0;
-			result = MRC_ERR_MEMORY;
-		}
-		else
-		{
-			slot->entryCount = mrcParse(slot->buffer, contentLength, slot->entries, maxEntries, &slot->skippedLines);
-			mrcSortEntries(slot->entries, &slot->entryCount, &slot->skippedLines);
-		}
-	}
+                slot->entriesSize = maxEntries * sizeof(struct MRC_Entry);
+                if (TMP_alloc(slot->entriesSize, (void**)&slot->entries) != 0 || slot->entries == 0)
+                {
+                        slot->entries = 0;
+                        slot->entriesSize = 0;
+                        result = MRC_ERR_MEMORY;
+                }
+                else if (TMP_alloc(slot->bufferSize, (void**)&parseBuffer) != 0 || parseBuffer == 0)
+                {
+                        result = MRC_ERR_MEMORY;
+                }
+                else
+                {
+                        std::memcpy(parseBuffer, slot->buffer, slot->bufferSize);
+                        slot->entryCount = mrcParse(parseBuffer, contentLength, slot->entries, maxEntries, &slot->skippedLines);
+                        TMP_free(slot->bufferSize, (void*)parseBuffer);
+                        mrcSortEntries(slot->entries, &slot->entryCount, &slot->skippedLines);
+                }
+        }
 
-	if (result != MRC_ERR_OK)
-	{
-		std::snprintf(text, sizeof(text), "open failed: %s/%s, error %ld",
-			(const char*)pDeviceName, (const char*)pFileName, (long)result);
-		mrcSlotRelease(slot);
-		mrcSetGlobalError(result);
-		mrcLogText(MRC_EVENT_ERR, "MRC_Open", text);
-		return 0;
-	}
+        if (result != MRC_ERR_OK)
+        {
+                std::snprintf(text, sizeof(text), "open failed: %s/%s, error %ld",
+                        (const char*)pDeviceName, (const char*)pFileName, (long)result);
+                mrcSlotRelease(slot);
+                mrcSetGlobalError(result);
+                mrcLogText(MRC_EVENT_ERR, "MRC_Open", text);
+                return 0;
+        }
 
-	std::snprintf(text, sizeof(text), "%s/%s: %lu entries",
-		(const char*)pDeviceName, (const char*)pFileName, (unsigned long)slot->entryCount);
-	mrcLogText(MRC_EVENT_INFO, "MRC_Open", text);
+        std::snprintf(text, sizeof(text), "%s/%s: %lu entries",
+                (const char*)pDeviceName, (const char*)pFileName, (unsigned long)slot->entryCount);
+        mrcLogText(MRC_EVENT_INFO, "MRC_Open", text);
 
-	if (slot->skippedLines > 0)
-	{
-		std::snprintf(text, sizeof(text), "%s/%s: %lu lines skipped",
-			(const char*)pDeviceName, (const char*)pFileName, (unsigned long)slot->skippedLines);
-		mrcLogText(MRC_EVENT_WARN, "MRC_Open", text);
-	}
+        if (slot->skippedLines > 0)
+        {
+                std::snprintf(text, sizeof(text), "%s/%s: %lu lines skipped",
+                        (const char*)pDeviceName, (const char*)pFileName, (unsigned long)slot->skippedLines);
+                mrcLogText(MRC_EVENT_WARN, "MRC_Open", text);
+        }
 
-	mrcSetError(slot, MRC_ERR_OK);
+        mrcSetError(slot, MRC_ERR_OK);
 
-	return slot->ident;
+        return slot->ident;
 }

@@ -58,3 +58,13 @@ END_FUNCTION
 		pDefault : UDINT; (*char* : default string, may be 0*)
 	END_VAR
 END_FUNCTION
+
+{REDUND_ERROR} FUNCTION MRC_ReadContent : DINT (*Reads the complete file content into a STRING variable. Returns copied length or negative error*) (*$GROUP=User,$CAT=User,$GROUPICON=User.png,$CATICON=User.png*)
+        VAR_INPUT
+                Ident : UDINT;
+                pValue : UDINT; (*char* : destination buffer*)
+                MaxSize : UDINT; (*size of destination buffer incl. terminating zero*)
+        END_VAR
+END_FUNCTION
+
+

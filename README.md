@@ -62,6 +62,8 @@ memory_limit_gb=4.25
 
 ### MRC_KeyExists
 
+### MRC_ReadContent
+
 ## Diagnosis
 
 all read operations go to 'MRC_log' logger.
