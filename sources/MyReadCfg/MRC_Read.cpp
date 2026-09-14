@@ -80,6 +80,20 @@ static void mrcLogReadSTRING(const char* key, const char* value)
 	mrcLogRead(key, "STRING", value);
 }
 
+static void mrcLogKeyNotFound(const char* key)
+{
+	char text[128];
+
+	if (key == 0 || *key == 0)
+	{
+		mrcLogText(MRC_EVENT_WARN, "MRC_Read", "MRC_ERR_KEY_NOT_FOUND");
+		return;
+	}
+
+	std::snprintf(text, sizeof(text), "key '%s' not found -> MRC_ERR_KEY_NOT_FOUND (%ld)", key, (long)MRC_ERR_KEY_NOT_FOUND);
+	mrcLogText(MRC_EVENT_WARN, "MRC_Read", text);
+}
+
 static const char* mrcLookup(unsigned long Ident, unsigned long pKey, struct MRC_Slot** pSlot)
 {
 	struct MRC_Slot* slot = mrcSlotGet(Ident);
@@ -103,6 +117,7 @@ static const char* mrcLookup(unsigned long Ident, unsigned long pKey, struct MRC
 	if (value == 0)
 	{
 		mrcSetError(slot, MRC_ERR_KEY_NOT_FOUND);
+		mrcLogKeyNotFound((const char*)pKey);
 		return 0;
 	}
 
@@ -133,8 +148,18 @@ signed long MRC_GetLastError(unsigned long Ident)
 plcbit MRC_KeyExists(unsigned long Ident, unsigned long pKey)
 {
 	struct MRC_Slot* slot;
+	const char* value = mrcLookup(Ident, pKey, &slot);
 
-	return (mrcLookup(Ident, pKey, &slot) != 0) ? 1 : 0;
+	if (value == 0)
+	{
+		if (slot != 0)
+		{
+			mrcSetError(slot, MRC_ERR_KEY_NOT_FOUND);
+		}
+		return 0;
+	}
+
+	return 1;
 }
 
 /* Reads a value as BOOL */

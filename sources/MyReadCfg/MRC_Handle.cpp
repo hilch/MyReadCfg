@@ -117,11 +117,20 @@ void mrcSlotRelease(struct MRC_Slot* slot)
 
 void mrcSetError(struct MRC_Slot* slot, signed long error)
 {
-	if (slot != 0)
+	if (slot == 0)
 	{
-		slot->lastError = error;
+		return;
 	}
-	mrcGlobalError = error;
+
+	if (error == MRC_ERR_OK)
+	{
+		if (slot->lastError != MRC_ERR_OK)
+		{
+			return; /* keep the last real failure sticky */
+		}
+	}
+
+	slot->lastError = error;
 }
 
 void mrcSetGlobalError(signed long error)
