@@ -1,7 +1,10 @@
 
 PROGRAM _INIT
 	cfgIdent := MRC_Open(ADR(cfgDevice), ADR(cfgFileName));
-	
+
+	(* check if key exist *)
+	key_exist := MRC_KeyExists( cfgIdent, ADR('app_name') );
+		
 	(* read STRING *)
 	MRC_ReadSTRING( cfgIdent, ADR('app_name'), ADR(gMachineCfg.app_name), SIZEOF(gMachineCfg.app_name), ADR('<unknown>') );
 	MRC_ReadSTRING( cfgIdent, ADR('database_host'), ADR(gMachineCfg.database_host), SIZEOF(gMachineCfg.database_host), ADR('0.0.0.0') );
@@ -11,11 +14,13 @@ PROGRAM _INIT
 	gMachineCfg.max_connections := MRC_ReadDINT(cfgIdent, ADR('max_connections'), 0);
 	gMachineCfg.port_number := MRC_ReadDINT(cfgIdent, ADR('port_number'), 0);
 	gMachineCfg.timeout_seconds := MRC_ReadDINT(cfgIdent, ADR('timeout_seconds'), 0);
+	gMachineCfg.buffer_size := MRC_ReadDINT(cfgIdent, ADR('buffer_size'), 0);	
 	
 	(* read BOOL *)
 	gMachineCfg.debug_mode := MRC_ReadBOOL(cfgIdent, ADR('debug_mode'), FALSE);
 	gMachineCfg.enable_logging := MRC_ReadBOOL(cfgIdent, ADR('enable_logging'), FALSE);
 	gMachineCfg.ssl_enabled := MRC_ReadBOOL(cfgIdent, ADR('ssl_enabled'), FALSE);	
+	gMachineCfg.direction := MRC_ReadBOOL(cfgIdent, ADR('direction'), FALSE);
 	
 	(* read LREAL *)
 	gMachineCfg.cpu_threshold := MRC_ReadLREAL(cfgIdent, ADR('cpu_threshold'), 0.0);
@@ -23,6 +28,10 @@ PROGRAM _INIT
 	
 	(* read complete file content *)
 	MRC_ReadContent( cfgIdent, ADR(content), SIZEOF(content) );	
+	
+	(* read not existing key *)
+	gMachineCfg.ssl_enabled := MRC_ReadBOOL(cfgIdent, ADR('not_exist'), FALSE);		
+	last_error := MRC_GetLastError(cfgIdent); (* returns MRC_ERR_KEY_NOT_FOUND *)
 	
 	MRC_Close(cfgIdent);
 	cfgIdent := 0; 
@@ -32,7 +41,7 @@ END_PROGRAM
 
 
 PROGRAM _CYCLIC
-	 
+
 END_PROGRAM
 
 PROGRAM _EXIT

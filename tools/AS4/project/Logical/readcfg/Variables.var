@@ -4,4 +4,6 @@ VAR
 	cfgFileName : STRING[80] := 'settings.ini';
 	cfgIdent : UDINT;
 	content : STRING[4096];
+	last_error : DINT;
+	key_exist : BOOL;
 END_VAR

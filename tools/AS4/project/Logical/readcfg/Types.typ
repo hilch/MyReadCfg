@@ -7,9 +7,11 @@ TYPE
 		max_connections : DINT;
 		port_number : DINT;
 		timeout_seconds : DINT;
+		buffer_size : DINT;
 		debug_mode : BOOL;
 		enable_logging : BOOL;
 		ssl_enabled : BOOL;
+		direction : BOOL;
 		cpu_threshold : LREAL;
 		memory_limit_gb : LREAL;
 	END_STRUCT;
