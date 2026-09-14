@@ -187,5 +187,6 @@ Parameters:
 ## Diagnosis
 
 All read operations go to the 'MRC_log' logger.
+![logger.png](https://github.com/hilch/MyReadCfg/blob/main/doc/logger.png)
 
 
