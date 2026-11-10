@@ -171,6 +171,7 @@ Parameters:
 Get the last error code after a failed read or when a key does not exist.
 
 ```st
+gMachineCfg.ssl_enabled := MRC_ReadBOOL(cfgIdent, ADR('not_exist'), FALSE);		
 last_error := MRC_GetLastError(cfgIdent); (* returns MRC_ERR_KEY_NOT_FOUND *)
 ```
 
@@ -214,5 +215,6 @@ Parameters:
 ## Diagnosis
 
 All read operations go to the 'MRC_log' logger.
+![logger.png](https://github.com/hilch/MyReadCfg/blob/main/doc/logger.png)
 
 
