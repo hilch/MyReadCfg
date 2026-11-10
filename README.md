@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Made For B&R](https://github.com/hilch/BandR-badges/blob/main/Made-For-BrAutomation.svg)](https://www.br-automation.com)
 
-Helper Library to read '.ini' style machine configuration files during startup
+Helper Library to read ['.ini' style](https://en.wikipedia.org/wiki/INI_file) machine configuration files during startup
 
 ## Dependencies / Preconditions
 
