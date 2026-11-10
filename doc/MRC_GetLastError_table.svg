@@ -27,7 +27,7 @@
   </text>
   <rect x="171" y="57" width="219" height="28" fill="#ffffff" stroke="#999999" />
   <text font-weight="normal" fill="#000000">
-    <tspan x="179" y="73" />
+    <tspan x="179" y="73">Ident from MRC_Open</tspan>
   </text>
   <rect x="1" y="85" width="389" height="28" fill="#eeeeee" stroke="#999999" />
   <text font-weight="bold" fill="#000000">

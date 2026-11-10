@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="391px" height="194px" viewBox="0 0 391 194" font-family="Arial" font-size="8">
+<svg xmlns="http://www.w3.org/2000/svg" width="391px" height="218px" viewBox="0 0 391 218" font-family="Arial" font-size="8">
   <title>MRC_Open parameters</title>
   <rect x="1" y="1" width="106" height="28" fill="#dce9f5" stroke="#999999" />
   <text font-weight="bold" fill="#000000">
@@ -17,46 +17,48 @@
   <text font-weight="bold" fill="#000000">
     <tspan x="9" y="45">Inputs</tspan>
   </text>
-  <rect x="1" y="57" width="106" height="28" fill="#ffffff" stroke="#999999" />
+  <rect x="1" y="57" width="106" height="40" fill="#ffffff" stroke="#999999" />
   <text font-weight="normal" fill="#000000">
     <tspan x="9" y="73">pDeviceName</tspan>
   </text>
-  <rect x="107" y="57" width="64" height="28" fill="#ffffff" stroke="#999999" />
+  <rect x="107" y="57" width="64" height="40" fill="#ffffff" stroke="#999999" />
   <text font-weight="normal" fill="#000000">
     <tspan x="115" y="73">UDINT</tspan>
   </text>
-  <rect x="171" y="57" width="219" height="28" fill="#ffffff" stroke="#999999" />
+  <rect x="171" y="57" width="219" height="40" fill="#ffffff" stroke="#999999" />
   <text font-weight="normal" fill="#000000">
-    <tspan x="179" y="73">char* : FileIO device name, e.g. "USER"</tspan>
+    <tspan x="179" y="73">Pointer to FileIO device name, e.g.</tspan>
+    <tspan x="179" y="85">'USER' (STRING)</tspan>
   </text>
-  <rect x="1" y="85" width="106" height="40" fill="#ffffff" stroke="#999999" />
+  <rect x="1" y="97" width="106" height="52" fill="#ffffff" stroke="#999999" />
   <text font-weight="normal" fill="#000000">
-    <tspan x="9" y="101">pFileName</tspan>
+    <tspan x="9" y="113">pFileName</tspan>
   </text>
-  <rect x="107" y="85" width="64" height="40" fill="#ffffff" stroke="#999999" />
+  <rect x="107" y="97" width="64" height="52" fill="#ffffff" stroke="#999999" />
   <text font-weight="normal" fill="#000000">
-    <tspan x="115" y="101">UDINT</tspan>
+    <tspan x="115" y="113">UDINT</tspan>
   </text>
-  <rect x="171" y="85" width="219" height="40" fill="#ffffff" stroke="#999999" />
+  <rect x="171" y="97" width="219" height="52" fill="#ffffff" stroke="#999999" />
   <text font-weight="normal" fill="#000000">
-    <tspan x="179" y="101">char* : file name incl. relative path,</tspan>
-    <tspan x="179" y="113">e.g. "Simulation/50000.INI"</tspan>
+    <tspan x="179" y="113">Pointer to file name incl. relative</tspan>
+    <tspan x="179" y="125">path, e.g. 'Simulation/50000.INI'</tspan>
+    <tspan x="179" y="137">(STRING)</tspan>
   </text>
-  <rect x="1" y="125" width="389" height="28" fill="#eeeeee" stroke="#999999" />
+  <rect x="1" y="149" width="389" height="28" fill="#eeeeee" stroke="#999999" />
   <text font-weight="bold" fill="#000000">
-    <tspan x="9" y="141">Outputs</tspan>
+    <tspan x="9" y="165">Outputs</tspan>
   </text>
-  <rect x="1" y="153" width="106" height="40" fill="#ffffff" stroke="#999999" />
+  <rect x="1" y="177" width="106" height="40" fill="#ffffff" stroke="#999999" />
   <text font-weight="normal" fill="#000000">
-    <tspan x="9" y="169">MRC_Open</tspan>
+    <tspan x="9" y="193">MRC_Open</tspan>
   </text>
-  <rect x="107" y="153" width="64" height="40" fill="#ffffff" stroke="#999999" />
+  <rect x="107" y="177" width="64" height="40" fill="#ffffff" stroke="#999999" />
   <text font-weight="normal" fill="#000000">
-    <tspan x="115" y="169">UDINT</tspan>
+    <tspan x="115" y="193">UDINT</tspan>
   </text>
-  <rect x="171" y="153" width="219" height="40" fill="#ffffff" stroke="#999999" />
+  <rect x="171" y="177" width="219" height="40" fill="#ffffff" stroke="#999999" />
   <text font-weight="normal" fill="#000000">
-    <tspan x="179" y="169">Reads a configuration file into memory,</tspan>
-    <tspan x="179" y="181">returns Ident (0 = error)</tspan>
+    <tspan x="179" y="193">Reads a configuration file into memory,</tspan>
+    <tspan x="179" y="205">returns Ident (0 = error)</tspan>
   </text>
 </svg>
