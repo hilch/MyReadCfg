@@ -62,11 +62,6 @@ Open the configuration and return a handle.
 cfgIdent := MRC_Open(ADR(cfgDevice), ADR(cfgFileName));
 ```
 
-Parameters:
-- `cfgDevice`: pointer to the device name used by FileIO, for example `USER`.
-- `cfgFileName`: pointer to the INI file path, for example `Simulation/50000.INI`.
-- Return value: configuration handle; `0` means the file could not be opened.
-
 ### MRC_ReadBOOL
 
 ![MRC_ReadBOOL](doc/MRC_ReadBOOL.svg)
@@ -81,12 +76,6 @@ gMachineCfg.enable_logging := MRC_ReadBOOL(cfgIdent, ADR('enable_logging'), FALS
 gMachineCfg.ssl_enabled := MRC_ReadBOOL(cfgIdent, ADR('ssl_enabled'), FALSE);
 gMachineCfg.direction := MRC_ReadBOOL(cfgIdent, ADR('direction'), FALSE);
 ```
-
-Parameters:
-- `cfgIdent`: handle returned by `MRC_Open`.
-- `pKey`: pointer to the key name, for example `ADR('debug_mode')`.
-- `Default`: value returned if the key is missing or cannot be converted.
-- Return value: the value as `BOOL`.
 
 ### MRC_ReadDINT
 
@@ -103,12 +92,6 @@ gMachineCfg.timeout_seconds := MRC_ReadDINT(cfgIdent, ADR('timeout_seconds'), 0)
 gMachineCfg.buffer_size := MRC_ReadDINT(cfgIdent, ADR('buffer_size'), 0);
 ```
 
-Parameters:
-- `cfgIdent`: handle returned by `MRC_Open`.
-- `pKey`: pointer to the key name.
-- `Default`: default `DINT` value if the key is missing or invalid.
-- Return value: the value as `DINT`.
-
 ### MRC_ReadLREAL
 
 ![MRC_ReadLREAL](doc/MRC_ReadLREAL.svg)
@@ -121,12 +104,6 @@ Read a floating-point value.
 gMachineCfg.cpu_threshold := MRC_ReadLREAL(cfgIdent, ADR('cpu_threshold'), 0.0);
 gMachineCfg.memory_limit_gb := MRC_ReadLREAL(cfgIdent, ADR('memory_limit_gb'), 0.0);
 ```
-
-Parameters:
-- `cfgIdent`: handle returned by `MRC_Open`.
-- `pKey`: pointer to the key name.
-- `Default`: default `LREAL` value if the key is missing or invalid.
-- Return value: the value as `LREAL`.
 
 ### MRC_ReadSTRING
 
@@ -142,14 +119,6 @@ MRC_ReadSTRING(cfgIdent, ADR('database_host'), ADR(gMachineCfg.database_host), S
 MRC_ReadSTRING(cfgIdent, ADR('log_file_path'), ADR(gMachineCfg.log_file_path), SIZEOF(gMachineCfg.log_file_path), ADR('\'));
 ```
 
-Parameters:
-- `cfgIdent`: handle returned by `MRC_Open`.
-- `pKey`: pointer to the key name.
-- `pValue`: pointer to the destination buffer, usually a `STRING` or array variable.
-- `MaxSize`: size of the destination buffer including the terminating zero.
-- `pDefault`: pointer to the fallback string if the key is missing.
-- Return value: number of copied characters or a negative error code.
-
 ### MRC_Close
 
 ![MRC_Close](doc/MRC_Close.svg)
@@ -162,10 +131,6 @@ Close the configuration handle when it is no longer needed.
 MRC_Close(cfgIdent);
 cfgIdent := 0;
 ```
-
-Parameters:
-- `cfgIdent`: handle returned by `MRC_Open`.
-- Return value: `0` for success; otherwise an error code is returned.
 
 ### MRC_GetLastError
 
@@ -180,10 +145,6 @@ gMachineCfg.ssl_enabled := MRC_ReadBOOL(cfgIdent, ADR('not_exist'), FALSE);
 last_error := MRC_GetLastError(cfgIdent); (* returns MRC_ERR_KEY_NOT_FOUND *)
 ```
 
-Parameters:
-- `cfgIdent`: handle returned by `MRC_Open`.
-- Return value: the last error code for that configuration handle.
-
 ### MRC_KeyExists
 
 ![MRC_KeyExists](doc/MRC_KeyExists.svg)
@@ -196,11 +157,6 @@ Check whether a key is present in the configuration.
 key_exist := MRC_KeyExists(cfgIdent, ADR('app_name'));
 ```
 
-Parameters:
-- `cfgIdent`: handle returned by `MRC_Open`.
-- `pKey`: pointer to the key name.
-- Return value: `TRUE` if the key exists, otherwise `FALSE`.
-
 ### MRC_ReadContent
 
 ![MRC_ReadContent](doc/MRC_ReadContent.svg)
@@ -212,12 +168,6 @@ Read the complete file content into a buffer.
 ```st
 MRC_ReadContent(cfgIdent, ADR(content), SIZEOF(content));
 ```
-
-Parameters:
-- `cfgIdent`: handle returned by `MRC_Open`.
-- `pValue`: pointer to the destination buffer for the file content.
-- `MaxSize`: maximum size of the destination buffer including the terminating zero.
-- Return value: number of copied characters or a negative error code.
 
 ## Diagnosis
 
