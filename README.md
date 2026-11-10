@@ -54,6 +54,9 @@ The functions may only be used in _INIT !
 
 ### MRC_Open
 
+![MRC_Open](doc/MRC_Open.svg)
+![MRC_Open table](doc/MRC_Open_table.svg)
+
 Open the configuration and return a handle.
 
 ```st
@@ -66,6 +69,9 @@ Parameters:
 - Return value: configuration handle; `0` means the file could not be opened.
 
 ### MRC_ReadBOOL
+
+![MRC_ReadBOOL](doc/MRC_ReadBOOL.svg)
+![MRC_ReadBOOL table](doc/MRC_ReadBOOL_table.svg)
 
 Read a boolean value with a fallback value if the key does not exist or is invalid.
 
@@ -84,6 +90,9 @@ Parameters:
 
 ### MRC_ReadDINT
 
+![MRC_ReadDINT](doc/MRC_ReadDINT.svg)
+![MRC_ReadDINT table](doc/MRC_ReadDINT_table.svg)
+
 Read an integer value.
 
 ```st
@@ -101,6 +110,9 @@ Parameters:
 
 ### MRC_ReadLREAL
 
+![MRC_ReadLREAL](doc/MRC_ReadLREAL.svg)
+![MRC_ReadLREAL table](doc/MRC_ReadLREAL_table.svg)
+
 Read a floating-point value.
 
 ```st
@@ -115,6 +127,9 @@ Parameters:
 - Return value: the value as `LREAL`.
 
 ### MRC_ReadSTRING
+
+![MRC_ReadSTRING](doc/MRC_ReadSTRING.svg)
+![MRC_ReadSTRING table](doc/MRC_ReadSTRING_table.svg)
 
 Read a string value into a fixed-size buffer.
 
@@ -134,6 +149,9 @@ Parameters:
 
 ### MRC_Close
 
+![MRC_Close](doc/MRC_Close.svg)
+![MRC_Close table](doc/MRC_Close_table.svg)
+
 Close the configuration handle when it is no longer needed.
 
 ```st
@@ -147,6 +165,9 @@ Parameters:
 
 ### MRC_GetLastError
 
+![MRC_GetLastError](doc/MRC_GetLastError.svg)
+![MRC_GetLastError table](doc/MRC_GetLastError_table.svg)
+
 Get the last error code after a failed read or when a key does not exist.
 
 ```st
@@ -158,6 +179,9 @@ Parameters:
 - Return value: the last error code for that configuration handle.
 
 ### MRC_KeyExists
+
+![MRC_KeyExists](doc/MRC_KeyExists.svg)
+![MRC_KeyExists table](doc/MRC_KeyExists_table.svg)
 
 Check whether a key is present in the configuration.
 
@@ -171,6 +195,9 @@ Parameters:
 - Return value: `TRUE` if the key exists, otherwise `FALSE`.
 
 ### MRC_ReadContent
+
+![MRC_ReadContent](doc/MRC_ReadContent.svg)
+![MRC_ReadContent table](doc/MRC_ReadContent_table.svg)
 
 Read the complete file content into a buffer.
 

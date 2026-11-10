@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="391px" height="278px" viewBox="0 0 391 278" font-family="Arial" font-size="8">
+  <title>MRC_ReadSTRING parameters</title>
+  <rect x="1" y="1" width="106" height="28" fill="#dce9f5" stroke="#999999" />
+  <text font-weight="bold" fill="#000000">
+    <tspan x="9" y="17">Parameter</tspan>
+  </text>
+  <rect x="107" y="1" width="64" height="28" fill="#dce9f5" stroke="#999999" />
+  <text font-weight="bold" fill="#000000">
+    <tspan x="115" y="17">Datatype</tspan>
+  </text>
+  <rect x="171" y="1" width="219" height="28" fill="#dce9f5" stroke="#999999" />
+  <text font-weight="bold" fill="#000000">
+    <tspan x="179" y="17">Description</tspan>
+  </text>
+  <rect x="1" y="29" width="389" height="28" fill="#eeeeee" stroke="#999999" />
+  <text font-weight="bold" fill="#000000">
+    <tspan x="9" y="45">Inputs</tspan>
+  </text>
+  <rect x="1" y="57" width="106" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="9" y="73">Ident</tspan>
+  </text>
+  <rect x="107" y="57" width="64" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="115" y="73">UDINT</tspan>
+  </text>
+  <rect x="171" y="57" width="219" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="179" y="73" />
+  </text>
+  <rect x="1" y="85" width="106" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="9" y="101">pKey</tspan>
+  </text>
+  <rect x="107" y="85" width="64" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="115" y="101">UDINT</tspan>
+  </text>
+  <rect x="171" y="85" width="219" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="179" y="101">char* : name of the constant</tspan>
+  </text>
+  <rect x="1" y="113" width="106" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="9" y="129">pValue</tspan>
+  </text>
+  <rect x="107" y="113" width="64" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="115" y="129">UDINT</tspan>
+  </text>
+  <rect x="171" y="113" width="219" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="179" y="129">char* : destination buffer</tspan>
+  </text>
+  <rect x="1" y="141" width="106" height="40" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="9" y="157">MaxSize</tspan>
+  </text>
+  <rect x="107" y="141" width="64" height="40" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="115" y="157">UDINT</tspan>
+  </text>
+  <rect x="171" y="141" width="219" height="40" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="179" y="157">size of destination buffer incl.</tspan>
+    <tspan x="179" y="169">terminating zero</tspan>
+  </text>
+  <rect x="1" y="181" width="106" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="9" y="197">pDefault</tspan>
+  </text>
+  <rect x="107" y="181" width="64" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="115" y="197">UDINT</tspan>
+  </text>
+  <rect x="171" y="181" width="219" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="179" y="197">char* : default string, may be 0</tspan>
+  </text>
+  <rect x="1" y="209" width="389" height="28" fill="#eeeeee" stroke="#999999" />
+  <text font-weight="bold" fill="#000000">
+    <tspan x="9" y="225">Outputs</tspan>
+  </text>
+  <rect x="1" y="237" width="106" height="40" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="9" y="253">MRC_ReadSTRING</tspan>
+  </text>
+  <rect x="107" y="237" width="64" height="40" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="115" y="253">DINT</tspan>
+  </text>
+  <rect x="171" y="237" width="219" height="40" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="179" y="253">Reads a value as STRING. Returns copied</tspan>
+    <tspan x="179" y="265">length or negative error</tspan>
+  </text>
+</svg>

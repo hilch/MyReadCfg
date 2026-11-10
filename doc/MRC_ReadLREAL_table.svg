@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="391px" height="210px" viewBox="0 0 391 210" font-family="Arial" font-size="8">
+  <title>MRC_ReadLREAL parameters</title>
+  <rect x="1" y="1" width="106" height="28" fill="#dce9f5" stroke="#999999" />
+  <text font-weight="bold" fill="#000000">
+    <tspan x="9" y="17">Parameter</tspan>
+  </text>
+  <rect x="107" y="1" width="64" height="28" fill="#dce9f5" stroke="#999999" />
+  <text font-weight="bold" fill="#000000">
+    <tspan x="115" y="17">Datatype</tspan>
+  </text>
+  <rect x="171" y="1" width="219" height="28" fill="#dce9f5" stroke="#999999" />
+  <text font-weight="bold" fill="#000000">
+    <tspan x="179" y="17">Description</tspan>
+  </text>
+  <rect x="1" y="29" width="389" height="28" fill="#eeeeee" stroke="#999999" />
+  <text font-weight="bold" fill="#000000">
+    <tspan x="9" y="45">Inputs</tspan>
+  </text>
+  <rect x="1" y="57" width="106" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="9" y="73">Ident</tspan>
+  </text>
+  <rect x="107" y="57" width="64" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="115" y="73">UDINT</tspan>
+  </text>
+  <rect x="171" y="57" width="219" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="179" y="73" />
+  </text>
+  <rect x="1" y="85" width="106" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="9" y="101">pKey</tspan>
+  </text>
+  <rect x="107" y="85" width="64" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="115" y="101">UDINT</tspan>
+  </text>
+  <rect x="171" y="85" width="219" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="179" y="101">char* : name of the constant</tspan>
+  </text>
+  <rect x="1" y="113" width="106" height="40" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="9" y="129">Default</tspan>
+  </text>
+  <rect x="107" y="113" width="64" height="40" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="115" y="129">LREAL</tspan>
+  </text>
+  <rect x="171" y="113" width="219" height="40" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="179" y="129">returned if key is missing or not</tspan>
+    <tspan x="179" y="141">convertible</tspan>
+  </text>
+  <rect x="1" y="153" width="389" height="28" fill="#eeeeee" stroke="#999999" />
+  <text font-weight="bold" fill="#000000">
+    <tspan x="9" y="169">Outputs</tspan>
+  </text>
+  <rect x="1" y="181" width="106" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="9" y="197">MRC_ReadLREAL</tspan>
+  </text>
+  <rect x="107" y="181" width="64" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="115" y="197">LREAL</tspan>
+  </text>
+  <rect x="171" y="181" width="219" height="28" fill="#ffffff" stroke="#999999" />
+  <text font-weight="normal" fill="#000000">
+    <tspan x="179" y="197">Reads a value as LREAL</tspan>
+  </text>
+</svg>
