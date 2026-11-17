@@ -5,6 +5,10 @@
 
 Helper Library to read ['.ini' style](https://en.wikipedia.org/wiki/INI_file) machine configuration files during startup
 
+## License
+
+This software published under [MIT license](LICENSE). Also have a look into the [disclaimer](Disclaimer.md).
+
 ## Dependencies / Preconditions
 
 - ArEventLog
